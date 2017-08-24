@@ -93,7 +93,13 @@ a {
   background-image: url('../iv_bg.jpg');
   background-size: cover;
   background-position: 0% 38%;
-
+  height: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  
   @include large {
     padding: 5rem 6rem;
   }
@@ -145,6 +151,10 @@ a {
 .main-content {
   word-wrap: break-word;
 
+  margin-top: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  
   :first-child {
     margin-top: 0;
   }
@@ -152,7 +162,6 @@ a {
   @include large {
     max-width: 64rem;
     padding: 2rem 6rem;
-    margin: 0 auto;
     font-size: 1.1rem;
   }
 
